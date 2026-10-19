@@ -1,0 +1,14 @@
+{
+  "name": "rameshvaranganti-sap-tools",
+  "owner": {
+    "name": "Rameshkumar Varanganti"
+  },
+  "plugins": [
+    {
+      "name": "sap-integration-assistant",
+      "source": "./",
+      "description": "AI assistant for SAP Integration Suite development, architecture, and troubleshooting.",
+      "version": "1.0.0"
+    }
+  ]
+}
