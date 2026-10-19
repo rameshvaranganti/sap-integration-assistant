@@ -1,6 +1,6 @@
-# SAP Integration Assistant (Agent Skill)
+# SAP Integration Assistant (Claude Plugin and Agent Skill)
 
-An Agent Skill for SAP Integration Suite work: Cloud Integration (CPI), API Management, Event Mesh, Integration Advisor, and SAP-to-external-system integrations.
+An AI assistant for SAP Integration Suite work: Cloud Integration (CPI), API Management, Event Mesh, Integration Advisor, and SAP-to-external-system integrations.
 
 Created by Rameshkumar Varanganti.
 
@@ -15,11 +15,29 @@ Created by Rameshkumar Varanganti.
 
 ## Install
 
-**Claude.ai / Claude Desktop**: zip the `sap-integration-assistant` folder (the folder itself must be the top level of the zip), then go to Settings > Capabilities, enable code execution and Skills, and upload the zip.
+### Claude Code (plugin)
 
-**Claude Code**: copy the `sap-integration-assistant` folder into `~/.claude/skills/` (personal) or `.claude/skills/` in your project.
+```
+/plugin marketplace add rameshvaranganti/sap-integration-assistant
+/plugin install sap-integration-assistant@rameshvaranganti-sap-tools
+```
 
-**Claude API**: upload it through the Skills API (see Anthropic's Skills documentation).
+Or from the command line:
+
+```
+claude plugin marketplace add rameshvaranganti/sap-integration-assistant
+claude plugin install sap-integration-assistant@rameshvaranganti-sap-tools
+```
+
+Update later with `/plugin marketplace update`.
+
+### Claude.ai / Claude Desktop (skill upload)
+
+Zip the `skills/sap-integration-assistant` folder (the folder itself must be the top level of the zip), then go to Settings > Capabilities, enable code execution and Skills, and upload the zip.
+
+### Claude API
+
+Upload the skill through the Skills API (see Anthropic's Skills documentation).
 
 The skill follows the open Agent Skills format, so other compatible tools can use the same folder.
 
@@ -27,10 +45,17 @@ The skill follows the open Agent Skills format, so other compatible tools can us
 
 ```
 sap-integration-assistant/
-├── SKILL.md
-└── references/
-    ├── groovy-cpi-patterns.md
-    └── troubleshooting-and-review.md
+├── .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── skills/
+│   └── sap-integration-assistant/
+│       ├── SKILL.md
+│       └── references/
+│           ├── groovy-cpi-patterns.md
+│           └── troubleshooting-and-review.md
+├── README.md
+└── LICENSE
 ```
 
 ## Disclaimer
@@ -39,4 +64,4 @@ Not an official SAP product. Generated code and designs are AI-produced and are 
 
 ## License
 
-Add a license of your choice (for example MIT) before publishing.
+MIT. See [LICENSE](LICENSE).
