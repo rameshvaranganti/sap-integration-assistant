@@ -11,7 +11,14 @@ Created by Rameshkumar Varanganti.
 - **Troubleshooting**: evidence-first analysis of logs, payloads, and configs, with ranked hypotheses and verification steps
 - **Performance**: payload processing, mappings, external calls, batching, concurrency
 - **Reviews**: correctness, security, runtime compatibility, null handling, namespaces, encoding, time zones, sensitive logging
+- **AI and agentic integration**: SAP Business AI Platform (BAIP) context, MCP Gateway and MCP server creation, API-to-AI tool design, Generative AI Hub and the AI adapter
 - **Accuracy**: prefers official SAP documentation, never invents APIs or SAP Notes, and separates static analysis from tested behavior
+
+## Web version (no install)
+
+Try the assistant as a chat app in your browser: https://claude.ai/artifact/N5o3LjwwP7Gs5WEVCNCqiE
+
+It needs a signed-in Claude account, and your usage counts against your own Claude limits.
 
 ## Install
 
@@ -53,10 +60,16 @@ sap-integration-assistant/
 │       ├── SKILL.md
 │       └── references/
 │           ├── groovy-cpi-patterns.md
-│           └── troubleshooting-and-review.md
+│           ├── troubleshooting-and-review.md
+│           └── baip-mcp-api-to-ai.md
 ├── README.md
 └── LICENSE
 ```
+
+## Changelog
+
+- **1.1.0**: Added AI and agentic integration mode with a BAIP, MCP Gateway and API-to-AI reference. Triggers now cover MCP and BAIP questions.
+- **1.0.0**: Initial release (CPI development, architecture, troubleshooting, performance, review).
 
 ## Disclaimer
 

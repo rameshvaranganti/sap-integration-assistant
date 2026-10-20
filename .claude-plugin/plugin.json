@@ -1,12 +1,24 @@
 {
   "name": "sap-integration-assistant",
-  "description": "AI assistant for SAP Integration Suite: CPI development (Groovy, mappings, XSLT), architecture, troubleshooting, performance, API Management, Event Mesh, and design reviews.",
-  "version": "1.0.0",
+  "description": "AI assistant for SAP Integration Suite on SAP Business AI Platform: CPI development (Groovy, mappings, XSLT), architecture, troubleshooting, performance, API Management, Event Mesh, MCP Gateway, API-to-AI and design reviews.",
+  "version": "1.1.0",
   "author": {
     "name": "Rameshkumar Varanganti",
     "url": "https://github.com/rameshvaranganti"
   },
   "repository": "https://github.com/rameshvaranganti/sap-integration-assistant",
   "license": "MIT",
-  "keywords": ["sap", "cpi", "integration-suite", "groovy", "api-management", "event-mesh", "btp"]
+  "keywords": [
+    "api-management",
+    "api-to-ai",
+    "baip",
+    "btp",
+    "cpi",
+    "event-mesh",
+    "groovy",
+    "integration-suite",
+    "mcp",
+    "sap"
+  ],
+  "homepage": "https://github.com/rameshvaranganti/sap-integration-assistant"
 }

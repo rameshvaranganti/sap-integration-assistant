@@ -1,5 +1,6 @@
-{
+﻿{
   "name": "rameshvaranganti-sap-tools",
+  "description": "Claude plugins for SAP Integration Suite developers, architects and support teams, by Rameshkumar Varanganti.",
   "owner": {
     "name": "Rameshkumar Varanganti"
   },
@@ -7,8 +8,8 @@
     {
       "name": "sap-integration-assistant",
       "source": "./",
-      "description": "AI assistant for SAP Integration Suite development, architecture, and troubleshooting.",
-      "version": "1.0.0"
+      "description": "AI assistant for SAP Integration Suite: development, architecture, troubleshooting, MCP Gateway and API-to-AI.",
+      "version": "1.1.0"
     }
   ]
 }
